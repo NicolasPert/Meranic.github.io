@@ -29,9 +29,8 @@ ul {
   rgba(161,0,107,1) 39%,
   rgba(205,0,55,1) 100%);
   list-style-type:none;
-	overflow:hidden;
+  overflow:hidden;
   margin: 0;
-  padding: 10px;
 }
 
 li {
