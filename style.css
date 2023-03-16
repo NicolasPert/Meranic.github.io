@@ -251,7 +251,7 @@ em {
   width: 480px;
   height: 150px;
   border: 3px solid #808080;
-  border-radius: 28px;
+  border-radius: 10px;
   overflow: auto;
 }
 
@@ -269,7 +269,7 @@ em {
   width: 480px;
   height: 100px;
   border: 3px solid #808080;
-  border-radius: 28px;
+  border-radius: 10px;
 }
 
 h1 {
