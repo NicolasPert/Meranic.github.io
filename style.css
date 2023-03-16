@@ -172,6 +172,9 @@ ol {
 @media screen and (max-width: 1200px)
 {
 
+.menu {
+  width: 480px;
+ }
 
 #grandeboite1, #grandeboite2 { 
   margin-left: 0;
