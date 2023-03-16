@@ -173,69 +173,11 @@ ol {
 @media screen and (max-width: 1200px)
 {
 
-.sidenav {
-  height: 100%;
-  width: 250px;
+
+.menu {
   position: fixed;
-  z-index: 1;
-  top: 0;
-  left: -250px;
-  background: rgb(110,30,120);
-  background: linear-gradient(90deg, 
-  rgba(110,30,120,1) 0%,
-  rgba(161,0,107,1) 39%, 
-  rgba(205,0,55,1) 100%);
-  padding-top: 60px;
-  transition: left 0.5s ease;
-}
-
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #f8f4f7;
-  display: block;
-  transition: 0.3s;
-}
-
-.sidenav a:hover {
-  color:  rgb(110,30,120);
-  color: linear-gradient(90deg, 
-  rgba(110,30,120,1) 0%,
-  rgba(161,0,107,1) 39%, 
-  rgba(205,0,55,1) 100%);
-}
-
-.sidenav ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-
-.sidenav.active {
-  left: 0;
-}
-
-
-.sidenav .close {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-}
-
-
-.burger-icon span {
-  display: block;
-  width: 35px;
-  height: 5px;
-  background: rgb(110,30,120);
-  background: linear-gradient(90deg, 
-  rgba(110,30,120,1) 0%,
-  rgba(161,0,107,1) 39%, 
-  rgba(205,0,55,1) 100%);
-  margin: 6px 0;
+  top :0;
+  width: 480px;
 }
 
 #grandeboite1, #grandeboite2 { 
