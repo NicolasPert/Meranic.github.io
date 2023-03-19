@@ -113,15 +113,6 @@ border-radius: 28px;
 }
 
 
-.pb2 {
-  grid-column-start:2;
-  grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-end: 3;
-  font-family:arial, Helvetica, sans-serif;
-  color: rgb(250, 246, 246);
-}
-
 .profil {
   grid-column-start:3;
   grid-column-end: 3;
@@ -209,6 +200,7 @@ h3 {
   margin-top: 50px;
   margin-left: 480px;
   width: 900px;
+  height:auto;
   border: 3px solid #808080;
   border-radius: 28px;
   padding: 15px;
@@ -306,16 +298,12 @@ margin: 10px;
 background: #f2f2f2;
 border: 3px solid #808080;
 width: auto;
+height: auto;
 border-radius: 28px;
 padding-bottom: 15px;
 }
 
 #grandeboite {
-display: grid;
-grid-template-columns: 1fr;
-grid-template-rows: repeat(4, 1fr);
-grid-column-gap: 0px;
-grid-row-gap: 0px;
 margin: 10px;
 background: rgb(110,30,120);
 background: linear-gradient(90deg, 
@@ -323,36 +311,18 @@ rgba(110,30,120,1) 0%,
 rgba(161,0,107,1) 39%, 
 rgba(205,0,55,1) 100%);
 border: 3px solid #808080;
+width: auto;
 border-radius: 28px;
 }
 
-.logo {
-  grid-column-start:1;
-  grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 2;
-  width: auto;
-  height: 120px;
+.logo, .profil {
+ display: none;
 }
 
 h1 {
-grid-column-start:1;
-grid-column-end: 2;
-grid-row-start: 2;
-grid-row-end: 3;
 font-family:arial, Helvetica, sans-serif;
 color: rgb(252, 251, 251);
 font-size:1.2em;
-}
-
-.profil {
-  grid-column-start:1;
-  grid-column-end: 2;
-  grid-row-start: 3;
-  grid-row-end: 4;
-  width: 50%;
-  padding-left: 15px;
-  margin-top: 85px;
 }
 
 
