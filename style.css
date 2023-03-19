@@ -127,11 +127,11 @@ p {
 }
 
 .profil {
-  grid-column-start:3;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 3;
-  width: 10em;
+  grid-column-start:1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  width: 80%;
   padding-top:40px;
 
 }
