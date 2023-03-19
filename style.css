@@ -41,8 +41,9 @@ z-index:999;
 
 .titre{
   color: white;
-  font-size: 3rem;
+  font-size: 1.5rem;
   line-height: 70px;
+  text-decoration: none;
 }
 
 .icon{
@@ -81,27 +82,12 @@ border-radius: 28px;
 .nav-menu a:hover, .show:hover{
   color: red;
 }
-
-h1 {
-  display: block;
-  bottom: 10px;
-  font-family:arial, Helvetica, sans-serif;
-  text-align: center;
-  padding-left: 10px;
-  color: rgb(252, 251, 251); 
-}
-p {
-  position: relative;
-  bottom: 10px;
-  font-family:rial, Helvetica, sans-serif;
-  text-align: center;
-  font-weight: bold;
-  padding-left:10px;
-  margin-bottom:25px;
-  color: rgb(250, 246, 246);
-}
-
 #grandeboite {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 120px;
+  grid-row-gap: 0px;
   margin-top: 50px;
   margin-left: 480px;
   background: rgb(110,30,120);
@@ -115,42 +101,181 @@ p {
   border-radius: 28px;
 }
 
-#profil {
-  position: relative;
-  bottom: 950px;
-  left: 160px;
-  transform: scale(0.16);
-  border-radius:50% 50% 48% 52% / 52% 51% 49% 48%;
+h1 {
+  grid-column-start:2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  font-family:arial, Helvetica, sans-serif;
+  color: rgb(252, 251, 251);
+  font-size:1.5em;
+  padding-top: 60px;
 }
 
-#logo {
+h2 {
+  text-align: center;
+  font-size: 2.5em;
+}
+
+p {
+  grid-column-start:2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  font-family:arial, Helvetica, sans-serif;
+  color: rgb(250, 246, 246);
+}
+
+.profil {
+  grid-column-start:3;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  width: 10em;
+  padding-top:40px;
+
+}
+
+
+.logo {
+  grid-column-start:1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 1;
   width: auto;
   height: 120px;
 }
 
 #grandeboite1 { 
+  display: grid;
+  grid-template-columns: repeat(2, 1fr fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-column-gap: 120px;
+  grid-row-gap: 0px;
   background: #f2f2f2;
   margin-top: 50px;
   margin-left: 480px;
   width: 900px;
   border: 3px solid #808080;
   border-radius: 28px;
+  
 }
 
-h2 {
-  font-size: 2.5em;
-  text-align: center;
+.p1 {
+  grid-column-start:2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+/* ici on commence nos petite-boite pour les placer toute a gauche des petites boites du texte*/
+.p2 {
+  grid-column-start:1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
 }
 
-h3 {
-  font-size: 1.8em;
+.p4 {
+  grid-column-start:1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.p6 {
+  grid-column-start:1;
+  grid-column-end: 2;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+
+.p8 {
+  grid-column-start:1;
+  grid-column-end: 2;
+  grid-row-start: 5;
+  grid-row-end: 6;
+}
+
+.p10 {
+  grid-column-start:1;
+  grid-column-end: 2;
+  grid-row-start: 6;
+  grid-row-end: 7;
+}
+
+/* ensuite on place nos autres petites boites (P3/5/7/9 et 10) à droite*/
+
+.p3 {
+  grid-column-start:2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.p5 {
+  grid-column-start:2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.p7 {
+  grid-column-start:2;
+  grid-column-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+
+.p9 {
+  grid-column-start:2;
+  grid-column-end: 3;
+  grid-row-start: 5;
+  grid-row-end: 6;
+}
+
+.p11 {
+  grid-column-start:2;
+  grid-column-end: 3;
+  grid-row-start: 6;
+  grid-row-end: 7;
+}
+
+/* on rend nos dates un pu plus belle, toujours dans le style Carmillon SNCF */
+
+.date {
+  border: 1px solid rgb(110,30,120);
+  background: rgb(110,30,120);
+  background: linear-gradient(90deg, 
+  rgba(110,30,120,1) 0%,
+  rgba(161,0,107,1) 39%, 
+  rgba(205,0,55,1) 100%);
+  color: white;
+  border-radius: 50%;
+  width :120px;
+  height:120px;
   text-align: center;
-  text-decoration:underline;
+  line-height:21px;
+  height: 70px;
+  padding-top:30px;
+  margin-left: 25px;
+  margin-top:45px;
+  margin-bottom:10px;
+  font-weight: bold;
+  font-size: 1.2em
+  
+}
+
+.space {
+  padding-top:5px;
+  margin-left: 25px;
+  margin-top:25px;
+  margin-bottom:10px;
+  font-size:1em;
 }
 
 .text {
   text-align: left;
-  padding: 5px;
+  padding: 25px;
   top: 10px;
   color: rgb(80, 78, 78);
   font-size:medium;
@@ -165,6 +290,16 @@ h3 {
   border: 3px solid #808080;
   border-radius: 28px;
 }
+
+#grandeboite3 { 
+  background: #f2f2f2;
+  margin-top: 50px;
+  margin-left: 480px;
+  width: 900px;
+  border: 3px solid #808080;
+  border-radius: 28px;
+}
+
 
 
 em {
@@ -183,6 +318,10 @@ color: rgb(80, 78, 78);
 font-size:medium;
 }
 
+.text2 {
+  color: #646464;
+  text-align: left;
+}
 .img {
 width: 50px;
 height: 50px;
@@ -196,6 +335,11 @@ padding: 20px 10px;
 }
 
 @media screen and (min-width: 768px){
+
+  #profil {
+    display: none;
+  }
+
   
   .icon{
       display: none;
@@ -226,11 +370,11 @@ padding: 20px 10px;
 
 }
 
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 768px){
 
-#profil {
- display: none;
-}
+  #profil {
+    display: none;
+  }
 
 
 #grandeboite1, #grandeboite2 { 
