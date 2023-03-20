@@ -376,6 +376,13 @@ width: auto;
 border-radius: 28px;
 }
 
+.titre{
+  color: white;
+  font-size: 1rem;
+  line-height: 70px;
+  text-decoration: none;
+}
+
 .logo, .profil {
  display: none;
 }
