@@ -31,6 +31,7 @@ background: linear-gradient(90deg,
 rgba(110,30,120,1) 0%,
 rgba(161,0,107,1) 39%, 
 rgba(205,0,55,1) 100%);
+box-shadow: -8px 10px 24px 3px rgba(128,128,128,0.82);
 padding: 10px;
 display: flex;
 justify-content: space-between;
@@ -99,6 +100,7 @@ border-radius: 28px;
   height: 300px;
   border: 3px solid #808080;
   border-radius: 28px;
+  box-shadow: -8px 10px 24px 3px rgba(128,128,128,0.82);
 }
 
 .pb1 {
@@ -145,6 +147,7 @@ h2{
   width: 900px;
   height: auto;
   border: 3px solid #808080;
+  box-shadow: -8px 10px 24px 3px rgba(128,128,128,0.82);
   border-radius: 28px;
 }
 
@@ -169,6 +172,7 @@ h3 {
   rgba(110,30,120,1) 0%,
   rgba(161,0,107,1) 39%, 
   rgba(205,0,55,1) 100%);
+  box-shadow: -8px 10px 24px 3px rgba(110,30,120,0.82);
   color: white;
   border-radius: 50%;
   width :120px;
@@ -195,6 +199,12 @@ h3 {
   padding-bottom: 15px;
 }
 
+.text2 {
+  color: rgb(80, 78, 78);
+  font-size:medium;
+  padding-bottom: 15px;
+  text-align: center;
+}
 
 #grandeboite2 { 
   background: #f2f2f2;
@@ -202,6 +212,7 @@ h3 {
   margin-left: 480px;
   width: 870px;
   border: 3px solid #808080;
+  box-shadow: -8px 10px 24px 3px rgba(128,128,128,0.82);
   border-radius: 28px;
   padding: 15px;
 }
@@ -212,6 +223,7 @@ h3 {
   margin-left: 480px;
   width: 870px;
   border: 3px solid #808080;
+  box-shadow: -8px 10px 24px 3px rgba(128,128,128,0.82);
   border-radius: 28px;
   padding: 15px;
 }
@@ -222,6 +234,7 @@ h3 {
   margin-left: 480px;
   width: 870px;
   border: 3px solid #808080;
+  box-shadow: -8px 10px 24px 3px rgba(128,128,128,0.82);
   border-radius: 28px;
   padding: 15px;
 
