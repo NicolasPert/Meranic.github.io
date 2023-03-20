@@ -186,7 +186,6 @@ h3 {
 
 .space {
   padding-top:5px;
-  padding-right: 6px;
   margin-top:25px;
   margin-bottom:10px;
   font-size:1.2em;
@@ -265,10 +264,13 @@ rgba(161,0,107,1) 39%,
 rgba(205,0,55,1) 100%);
 }
 
+
 .img {
   width: 50px;
   height: 50px;
+  
 }
+
 .img:hover {
   animation: myAnim 2s ease 0s 1 normal forwards;
 }
@@ -354,7 +356,7 @@ list-style-type: none;
 
 
 
-#grandeboite1, #grandeboite2, #grandeboite3, #grandeboite4, #grandeboite5 { 
+#grandeboite1, #grandeboite2, #grandeboite3, #grandeboite4 { 
 margin: 10px;
 background: #f2f2f2;
 border: 3px solid #808080;
@@ -376,6 +378,26 @@ width: auto;
 border-radius: 28px;
 }
 
+.date {
+  border: 1px solid rgb(110,30,120);
+  background: rgb(110,30,120);
+  background: linear-gradient(90deg, 
+  rgba(110,30,120,1) 0%,
+  rgba(161,0,107,1) 39%, 
+  rgba(205,0,55,1) 100%);
+  box-shadow: -8px 10px 24px 3px rgba(110,30,120,0.82);
+  color: white;
+  border-radius: 50%;
+  width :100px;
+  height:100px;
+  text-align: center;
+  line-height:21px;
+  height: 70px;
+  padding-top:30px;
+  font-weight: bold;
+  font-size: 1.1em
+}
+
 .titre{
   color: white;
   font-size: 1rem;
@@ -393,7 +415,15 @@ color: rgb(252, 251, 251);
 font-size:1.2em;
 }
 
-li {
-  margin-left: 0;
+
+.text {
+text-align: left;
+position:relative;
+top: 40px;
+color: rgb(80, 78, 78);
+font-size:1em;
+}
+
+
 
 }
