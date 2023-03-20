@@ -1,207 +1,192 @@
-<!DOCTYPE html>
-<html lang="fr"> <!--L'idée de base était de partir sur un model du pass Carmillon sncf pour le faire en version CV-->
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet">
-    <title>Curriculum Vitae</title>
-</head>
-<body>
-  <!-- création d'un petit bouton retour avec son script JS-->
-  <div class="btn">
-   <img  title="retour" src="./images/flèche.png" class="icone">
-  </div>
-<header>
-  <!-- ici j'aurais pu aussi faire mon menu avec du javascript mais il est possible de le faire en CSS-->
-  
-    <nav class="navbar">
-        <div class="titre">Nicolas Perthuisot - Web Developpeur</div>
-        <label for="btn" class="icon">
-            <svg viewBox="0 0 100 80" width="40" height="40">
-                <rect width="100" height="15"></rect>
-                <rect y="35" width="100" height="15"></rect>
-                <rect y="70" width="100" height="15"></rect>
-            </svg>
-        </label>
-        <input name="btn" text="btn" type="checkbox" id="btn">
-        <ul class="nav-menu">
-            <li class="nav-item">
-                <a href="#grandeboite">Infos</a>
-            </li>
-            <li class="nav-item">
-                <a href="#grandeboite1">Expérience</a>
-            </li>
-            <li class="nav-item">
-                <label for="btn2" class="show">+</label>
-                <input type="checkbox" id="btn2">
-                <ul class="dropdown">
+  <!DOCTYPE html>
+  <html lang="fr"> <!--L'idée de base était de partir sur un model du pass Carmillon sncf pour le faire en version CV-->
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="style.css" rel="stylesheet">
+      <title>Curriculum Vitae</title>
+  </head>
+  <body>
+    <!-- création d'un petit bouton retour avec son script JS-->
+    <div class="btn">
+    <img  title="retour" src="./images/flèche.png" class="icone">
+    </div>
+  <header>
+    <!-- ici j'aurais pu aussi faire mon menu avec du javascript mais il est possible de le faire en CSS-->
+    
+      <nav class="navbar">
+          <div class="titre">Nicolas Perthuisot - Web Developpeur</div>
+          <label for="btn" class="icon">
+              <svg viewBox="0 0 100 80" width="40" height="40">
+                  <rect width="100" height="15"></rect>
+                  <rect y="35" width="100" height="15"></rect>
+                  <rect y="70" width="100" height="15"></rect>
+              </svg>
+          </label>
+          <input name="btn" text="btn" type="checkbox" id="btn">
+          <ul class="nav-menu">
+              <li class="nav-item">
+                  <a href="#grandeboite">Carte de visite</a>
+              </li>
+              <li class="nav-item">
+                  <a href="#grandeboite1">Expériences</a>
+              </li>
+              <li class="nav-item">
+                  <label for="btn2" class="show">+</label>
+                  <input type="checkbox" id="btn2">
+                  <ul class="dropdown">
+                      <li class="drop-item">
+                        <a href="#grandeboite2">Qualités</a>
+                    </li>
                     <li class="drop-item">
-                      <a href="#grandeboite2">Qualités</a>
+                      <a href="#grandeboite3">Hobbies</a>
                   </li>
                   <li class="drop-item">
-                    <a href="#grandeboite3">Hobbies</a>
+                    <a href="#grandeboite4">Parcours</a>
                 </li>
                 <li class="drop-item">
-                  <a href="#grandeboite4">Parcours</a>
+                  <a href="#lu">Réseaux Sociaux</a>
               </li>
-              <li class="drop-item">
-                <a href="#lu">Réseau Sociaux</a>
-            </li>
-                </ul>
-            </li>
-        </ul>
-    </nav>
- <!--Voici la première partie ou j'ai reproduit mes premières infos en pass Carmillon SNCF-->
-  <section id="grandeboite">
-    
-    <img title="SNCF" src="images/SNCF.webp"  class="logo">
+                  </ul>
+              </li>
+          </ul>
+      </nav>
+  <!--Voici la première partie ou j'ai reproduit mes premières infos en pass Carmillon SNCF-->
+    <section id="grandeboite">
+      
+      <img title="SNCF" src="images/SNCF.webp"  class="logo">
 
-    <div class="pb1"><h1>Nicolas Perthuisot</h1>
-        <p>Développement web :  HTML/CSS/JS<br>
-        nicolas.perthuisot@sncf.fr<br>
-        Tel : 06 21 43 61 25<br></p>
-    </div>
-
-    <img title="Nicolas Perthuisot" src="images/NP.png" class="profil">
-  </section>
-  <section id="grandeboite1">
-     <!-- ici on fait un tableau pour présenter son Expérience-->
-  <h2>Experience</h2>
-    <table>
-      <tr>
-          <td><div class="date">2018<br>à ce jour</div></td>
-          <td><div class="space">
-        <h3>Mainteneur de l'infrastructure à la brigade de Gretz</h3>
-        <h4><em>SNCF Réseau, Gretz</em></h4>
-        <div class="text1">Organisation, gestion et réalisation des différents chantiers
-        demandés par SNCF réseau.
-        Suivi des chantiers, application des règles techniques de la voie.
-        Réalisation des cycles de maintenance de la voie au cours de
-        l’année calendaire.</div>
-      </div></td>
-      </tr>
-      <tr>
-          <td><div class="date">
-        2014 - <br>2018
-      </div></td>
-          <td> <div class="space">
-        <h3>Assistant Technique d’Unité spécialisé Rails</h3>
-        <h4><em>SNCF Réseau, Meaux</em></h4>
-        <div class="text1">Recherche, classification, gestion des plannings d'équipes
-        spécialisées, suivi des défauts de rails.
-        Suivi des bases de données jusqu’à suppression des anomalies.</div>
+      <div class="pb1"><h1>Nicolas Perthuisot</h1>
+          <p>Développement web :  HTML/CSS/JS<br>
+          <br>nicolas.perthuisot@sncf.fr<br>
+          Tel : 06 21 43 61 25<br></p>
       </div>
-        </td>
-        </tr>
+
+      <img title="Nicolas Perthuisot" src="images/NP.png" class="profil">
+    </section>
+    <section id="grandeboite1">
+      <!-- ici on fait un tableau pour présenter son Expérience-->
+    <h2>Expériences professionnelles</h2>
+      <table>
         <tr>
-        <td>
-          <div class="date">
-            2004 - <br>2014
-      </div>
-        </td>
-        <td><div class="space">
-          <h3>Agent d’Entretien Voie</h3>
-          <h4><em>SNCF Réseau, Meaux</em></h4>
-          <div class="text1">Entretien du réseau de la voie ferrée, sous la responsabilité des
-          mainteneurs de l’infrastructure.</div>
+            <td><div class="date">2018<br>à ce jour</div></td>
+            <td><div class="space">
+          <h3>Mainteneur de l'infrastructure à la brigade de Gretz</h3>
+          <h4><em>SNCF Réseau, Gretz</em></h4>
+          <div class="text1">Organisation, gestion et réalisation des différents chantiers
+          demandés par SNCF réseau.
+          Suivi des chantiers, application des règles techniques de la voie.
+          Réalisation des cycles de maintenance de la voie au cours de
+          l’année calendaire.</div>
         </div></td>
         </tr>
-        <td>
-      <div class="date">
-        2000 - <br>2004
-      </div>
-        </td>
-        <td>
-      <div class="space">
-      <h3>Vendeur, étalagiste, gérant</h3>
-      <h4><em>Boulinier, Paris</em></h4>
-      <div class="text1">Ventes en librairie, multimédia et BD (débuts comme vendeur,
-      puis gérant la dernière année).</div>
-    </div></td>
-</tr>
-<td>
-  <div class="date">
-    1998 -<br>2000
+        <tr>
+            <td><div class="date">
+          2014 - <br>2018
+        </div></td>
+            <td> <div class="space">
+          <h3>Assistant Technique d’Unité spécialisé Rails</h3>
+          <h4><em>SNCF Réseau, Meaux</em></h4>
+          <div class="text1">Recherche, classification, gestion des plannings d'équipes
+          spécialisées, suivi des défauts de rails.
+          Suivi des bases de données jusqu’à suppression des anomalies.</div>
+        </div>
+          </td>
+          </tr>
+          <tr>
+          <td>
+            <div class="date">
+              2004 - <br>2014
+        </div>
+          </td>
+          <td><div class="space">
+            <h3>Agent d’Entretien Voie</h3>
+            <h4></h4><em>SNCF Réseau, Meaux</em></h4>
+            <div class="text1">Entretien du réseau de la voie ferrée, sous la responsabilité des
+            mainteneurs de l’infrastructure.</div>
+          </div></td>
+          </tr>
+          <td>
+        <div class="date">
+          2000 - <br>2004
+        </div>
+          </td>
+          <td>
+        <div class="space">
+        <h3>Vendeur étalagiste/gérant</h3>
+        <h4><em>Boulinier, Paris</em></h4>
+        <div class="text1">Ventes en librairie, multimédia et BD (débuts comme vendeur,
+        puis gérant la dernière année).</div>
+      </div></td>
+  </tr>
+  <td>
+    <div class="date">
+      1998 -<br>2000
+    </div>
+  </td>
+  <td>    <div class="space">
+    <h3>Mécanicien Automobile</h3>
+    <h4><em>Divers, Meaux</em></h4>
+      <div class="text1">Plusieurs postes en intérim dans différents garages.</div>
   </div>
-</td>
-<td>    <div class="space">
-  <h3>Mécanicien Automobile</h3>
-  <h4><em>Divers, Meaux</em></h4>
-    <div class="text1">Plusieurs postes en intérim dans différents garages.</div>
-</div>
-</div></td>
-</tr>
-</table>
-<h2>Formation</h2>
-<table>
-  <tr>
-    <td><div class="date">1998</div></td>
-    <td><div class="space">
-  <h3>BEP/CAP Mécanicien, option véhicule léger</h3>
-   <h4><em>Lycée Georges Cormier, Coulommiers</em></h4>
-</div></td>
-</tr>
-</table>
-</section>
-<section id="grandeboite2">
-    <h2>Qualités</h2>
-        <div class="text2">
-         Travail en équipe,
-         Tenace,
-         Autonome,
-         Passionné,
-         Curieux,
-         Créatif
-         </div>
-</section>
-<section id="grandeboite3">
-    <h2>Hobbies</h2>
-        <div class="text2">
-          Jeux Vidéo (Hack’n’Slash, MMO,
-          RPG) <br> Cinéma (science-fiction,
-          action, thriller) <br> Informatique
-          <br> Membre d’une association sur
-          Disneyland Paris</div><br>
+  </div></td>
+  </tr>
+  </table>
+  <h2>Formation</h2>
+  <table>
+    <tr>
+      <td><div class="date">1998</div></td>
+      <td><div class="space">
+    <h3>BEP/CAP Mécanicien, option véhicule léger</h3>
+    <h4><em>Lycée Georges Cormier, Coulommiers</em></h4>
+  </div></td>
+  </tr>
+  </table>
   </section>
-  <section id="grandeboite4"> 
-  <!-- on reprend le theme de la boite sans le tablmeau pour la partie parcours perso-->
-    <h2>Parcours</h2>
-    <div class="text">
-      Je m'appelle Nicolas Perthuisot, j'ai <em>42 ans.</em> 
-      Je suis diplômé d'un BEP/CAP en mécanique automobile que j'ai obtenu en <em>1998.</em> 
-      J'ai commencé ma carrière professionnelle en effectuant quelques missions et formations pour Pôle emploi dans ce domaine. 
-      À la suite d'un accident de travail, j'ai changé de style de travail et j'ai travaillé en tant que vendeur étalagiste dans une librairie. 
-      J'y suis resté <em>4 ans</em> et j'ai pu évoluer au poste de gérant.<br>
-      <br>Cependant, les conditions de travail ne me plaisaient plus, alors j'ai postulé à la SNCF. 
-      On m'a proposé le poste d'opérateur, j'ai été formé sur <em>2 ans</em> et j'ai tenu ce poste pendant <em>10 ans.</em> 
-      Une proposition d'évolution vers une spécialisation de ce métier s'est présentée et j'ai été sélectionné. 
-      J'ai tenu ce poste pendant <em>4 ans</em>, ce qui m'a permis d'évoluer à la qualification supérieure et d'être à nouveau formé pendant 2 ans. 
-      Je voulais continuer mon évolution en passant le concours EV7 pour devenir Technicien spécialisé.<br> 
-      <br>Pour pouvoir le passer, il me manquait toute la pratique, 
-      alors j'ai demandé à occuper le poste de chef adjoint de brigade pour pouvoir étoffer ma pratique de mon métier. <br>
-      <br>J'ai tenté le concours en <em>2021</em>, mais je n'ai pas réussi car il me manquait 1 point et je n'ai pas pu le repasser par la suite car c'était la dernière possibilité.
-      Entre temps, je me suis renseigné sur la perspective d'évolution vers un autre métier qui découle de la passion que j'ai pour l'informatique. 
-      Cette passion est née en 2000 et j'ai commencé par le côté Hardware en démontant et préparant des configurations de PC à l'aide de livres. 
-      Cela m'a permis d'augmenter les performances du PC afin de pouvoir jouer aux jeux vidéo.<br> 
-      <br>J'ai eu une grande période de gaming dans laquelle je jouais à des jeux massivement multijoueurs et où je tenais un rôle de leader de guilde et leader de raid. 
-      Cela demandait beaucoup d'organisation et de communication, Nous avons donc eu besoin d'un moyen pour obtenir toutes les informations et instructions du jeu. 
-      C'est ainsi que j'ai commencé à faire de <em>l'HTML, SQL, PHP et CSS,</em> qui consistait dans un premier temps à avoir une page déjà faite dans laquelle je pouvais faire des tests, 
-      mais par la suite, j'ai voulu pousser mes connaissances pour en faire une par moi-même. <br>
-      <br>J'ai appris au travers des livres que j'empruntais à la librairie de mon second travail. 
-      J'ai continué à vouloir apprendre divers logiciels tels que la <em>3D, Excel, Python, etc.</em> jusqu'à ce jour. 
-      J'essaie de m'en servir au quotidien dans mon travail pour améliorer certains aspects de mon métier.<br>
-      <br>En <em>2022,</em> à la suite de divers problèmes de santé, j'ai été déclaré inapte pour le poste que j'occupais actuellement. 
-      J'ai donc candidaté pour le poste de Web développeur au sein de la SNCF.</div><br>
-  </section> 
-<footer>
-    <ul id="lu">
-      <li><a href="https://www.facebook.com" class="a2"><img src="images/facebook.svg"class="img" title="Facebook"></a></li>
-      <li><a href="https://www.instagram.com" class="a2"><img src="images/instagram.svg" class="img" title="instagram"></a></li>
-      <li><a href="https://www.whatsapp.com/" class="a2"><img src="images/whatsapp.svg" class="img" title="whatsapp"></a></li>
-      <li><a href="https://www.linkedin.com" class="a2"><img src="images/linkedin.svg" class="img" title="linkedin"></a></li>
-    </ul>
-</footer>
-<script src="app.js"></script>
-</body>
-</html>
+  <section id="grandeboite2">
+      <h2>Motivations</h2>
+          <div class="text">
+
+            Passionné par le monde du numérique depuis l’an 2000,
+            j’ai appris à créer des forums internet dans les débuts du
+            HTML.
+            Créer des applications ou des sites me motive. J’aime l’idée
+            d’accompagner mon entreprise dans l’ère du numérique.
+            Cela est très enthousiasmant de se sentir utile car ces
+            outils faciliteront le travail de plusieurs services.
+          </div>
+  </section>
+  <section id="grandeboite3">
+      <h2>Qualités</h2>
+          <div class="text2">      
+            Travail en équipe,
+            Tenace,
+            Autonome,
+            Passionné,
+            Curieux,
+            Créatif
+          </div><br>
+    </section>
+    <section id="grandeboite4"> 
+    <!-- on reprend le theme de la boite sans le tablmeau pour la partie parcours perso-->
+      <h2>Hobbies</h2>
+      <div class="text2">
+        Jeux Vidéo (Hack’n’Slash, MMO,
+        RPG) <br> Cinéma (science-fiction,
+        action, thriller) <br> Informatique (Hardware, Software)
+        <br> Membre d’une association sur
+        Disneyland Paris
+      </div>
+    </section> 
+  <footer>
+      <ul id="grandeboite5">
+        <li><a href="https://www.facebook.com"><img src="images/facebook.svg"class="img" title="Facebook"></a></li>
+        <li><a href="https://www.instagram.com"><img src="images/instagram.svg" class="img" title="instagram"></a></li>
+        <li><a href="https://www.whatsapp.com/"><img src="images/whatsapp.svg" class="img" title="whatsapp"></a></li>
+        <li><a href="https://www.linkedin.com"><img src="images/linkedin.svg" class="img" title="linkedin"></a></li>
+      </ul>
+  </footer>
+  <script src="app.js"></script>
+  </body>
+  </html>
