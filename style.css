@@ -31,7 +31,6 @@ background: linear-gradient(90deg,
 rgba(110,30,120,1) 0%,
 rgba(161,0,107,1) 39%, 
 rgba(205,0,55,1) 100%);
-box-shadow: -8px 10px 24px 3px rgba(128,128,128,0.82);
 padding: 10px;
 display: flex;
 justify-content: space-between;
@@ -240,6 +239,18 @@ h3 {
 
 }
 
+#grandeboite5 { 
+  background: #f2f2f2;
+  margin-top: 50px;
+  margin-left: 480px;
+  width: 870px;
+  border: 3px solid #808080;
+  box-shadow: -8px 10px 24px 3px rgba(128,128,128,0.82);
+  border-radius: 28px;
+  padding: 15px;
+
+}
+
 
 em {
 color : rgb(110,30,120);
@@ -259,9 +270,11 @@ height: 50px;
 
 }
 
-#lu  li {
+li {
 display: inline;
 padding: 20px 10px;
+margin-left:115px;
+list-style-type: none;
 
 }
 
