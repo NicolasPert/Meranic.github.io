@@ -82,6 +82,7 @@ border-radius: 28px;
 .nav-menu a:hover, .show:hover{
   color: red;
 }
+
 #grandeboite {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -200,12 +201,13 @@ h3 {
 .text1 {
   color: #646464;
   text-align: left;
+  padding-bottom: 30px;
 }
 
 .text2 {
   color: rgb(80, 78, 78);
   font-size:medium;
-  padding-bottom: 15px;
+  padding-bottom: 30px;
   text-align: center;
 }
 
@@ -421,6 +423,7 @@ position:relative;
 top: 40px;
 color: rgb(80, 78, 78);
 font-size:1em;
+padding-bottom: 20px;
 }
 	
 li {
